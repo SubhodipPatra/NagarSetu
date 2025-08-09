@@ -1,0 +1,30 @@
+.user-dashboard {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.user-dashboard h2 {
+  color: #1e3a8a;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.user-dashboard h3 {
+  color: #374151;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 5px;
+}
+
+.user-dashboard hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}

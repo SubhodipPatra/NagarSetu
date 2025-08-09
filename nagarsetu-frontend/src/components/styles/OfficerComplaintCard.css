@@ -1,0 +1,52 @@
+.complaint-card {
+  border: 1px solid #d1d5db;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.complaint-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.complaint-card h4 {
+  margin: 0 0 10px;
+  color: #1f2937;
+}
+
+.complaint-card p {
+  margin: 4px 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+.complaint-card select,
+.complaint-card input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  background-color: #f9fafb;
+}
+
+.complaint-card button {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.complaint-card button:hover {
+  background-color: #1d4ed8;
+}
