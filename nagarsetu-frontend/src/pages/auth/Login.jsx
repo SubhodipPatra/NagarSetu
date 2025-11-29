@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../utils/axiosConfig";
 import { saveToken, getRoleFromToken } from "../../utils/auth";
-import "../../components/styles/Login.css"; // 👈 Adjusted import path
+import "../../components/styles/Login.css"; 
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });

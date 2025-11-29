@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../utils/axiosConfig";
-import "./styles/OfficerApprovalTable.css"; // ✅ Import CSS
+import "./styles/OfficerApprovalTable.css"; 
 
 export default function OfficerApprovalTable() {
   const [officers, setOfficers] = useState([]);

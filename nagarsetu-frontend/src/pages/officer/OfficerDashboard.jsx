@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import api from "../../utils/axiosConfig";
 import LogoutButton from "../../components/LogoutButton";
 import OfficerComplaintCard from "../../components/OfficerComplaintCard";
-import "./OfficerDashboard.css"; // ✅ Import the CSS
+import "./OfficerDashboard.css"; 
 
 export default function OfficerDashboard() {
   const [complaints, setComplaints] = useState([]);
@@ -24,8 +24,8 @@ export default function OfficerDashboard() {
 
   const fetchOfficerInfo = async () => {
     try {
-      const res = await api.get("/officers/me"); // ✅ You must have this API
-      setOfficerName(res.data.name); // Make sure backend returns { name: "Officer Name" }
+      const res = await api.get("/officers/me"); 
+      setOfficerName(res.data.name); 
     } catch (err) {
       console.error("Failed to fetch officer info");
     }

@@ -1,13 +1,15 @@
 package com.subho.nagarsetu.service;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.subho.nagarsetu.model.Complaint;
 import com.subho.nagarsetu.model.ComplaintStatus;
 import com.subho.nagarsetu.model.ComplaintType;
 import com.subho.nagarsetu.model.Officer;
 import com.subho.nagarsetu.repo.ComplaintRepository;
 import com.subho.nagarsetu.repo.OfficerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import java.util.List;
 @Service
 public class ComplaintService {
 
@@ -23,7 +25,7 @@ public class ComplaintService {
             throw new RuntimeException("No available officer for department: " + mapTypeToDepartment(complaint.getType()));
         }
         complaint.setOfficer(assigned);
-        complaint.setStatus(ComplaintStatus.PENDING); // Default status
+        complaint.setStatus(ComplaintStatus.PENDING); 
         return complaintRepo.save(complaint);
     }
 
@@ -44,7 +46,7 @@ public class ComplaintService {
         return switch (type) {
             case DEVELOPMENT -> "BDO";
             case ISSUE -> "Gram Panchayat";
-            default -> type.toString(); // ELECTRICITY, WATER, etc.
+            default -> type.toString(); 
         };
     }
 

@@ -3,7 +3,7 @@ import api from "../../utils/axiosConfig";
 import ComplaintForm from "../../components/ComplaintForm";
 import UserComplaintList from "../../components/UserComplaintList";
 import LogoutButton from "../../components/LogoutButton";
-import "./UserDashboard.css"; // CSS import
+import "./UserDashboard.css"; 
 
 export default function UserDashboard() {
   const [userName, setUserName] = useState("");
@@ -14,8 +14,8 @@ export default function UserDashboard() {
 
   const fetchUserInfo = async () => {
     try {
-      const res = await api.get("/users/me"); // ✅ This endpoint must exist
-      setUserName(res.data.name); // Ensure backend returns { name: "User Name" }
+      const res = await api.get("/users/me"); 
+      setUserName(res.data.name); 
     } catch (err) {
       console.error("Failed to fetch user info");
     }

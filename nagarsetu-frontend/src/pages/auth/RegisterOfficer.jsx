@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../utils/axiosConfig";
-import "../../components/styles/AuthForm.css"; // 💄 Import shared form styles
+import "../../components/styles/AuthForm.css";
 
 export default function RegisterOfficer() {
   const [officer, setOfficer] = useState({

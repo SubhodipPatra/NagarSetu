@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../utils/axiosConfig";
 import "../../components/styles/AuthForm.css";
- // 💄 import shared CSS
+
 
 export default function RegisterUser() {
   const [user, setUser] = useState({ name: "", email: "", pincode: "", password: "" });

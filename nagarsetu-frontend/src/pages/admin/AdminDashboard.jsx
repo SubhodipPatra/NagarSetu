@@ -2,7 +2,7 @@ import LogoutButton from "../../components/LogoutButton";
 import OfficerApprovalTable from "../../components/OfficerApprovalTable";
 import ComplaintTableAdmin from "../../components/ComplaintTableAdmin";
 import ComplaintCountByDepartment from "../../components/ComplaintCountByDepartment";
-import "./AdminDashboard.css"; // ✅ Import CSS
+import "./AdminDashboard.css";
 
 export default function AdminDashboard() {
   return (

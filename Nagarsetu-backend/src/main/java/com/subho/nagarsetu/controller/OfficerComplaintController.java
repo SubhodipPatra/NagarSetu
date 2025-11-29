@@ -1,15 +1,22 @@
 package com.subho.nagarsetu.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.subho.nagarsetu.model.Complaint;
 import com.subho.nagarsetu.model.ComplaintStatus;
 import com.subho.nagarsetu.service.ComplaintService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.*;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/officer")
@@ -19,9 +26,7 @@ public class OfficerComplaintController {
     @Autowired
     private ComplaintService complaintService;
 
-    /**
-     * 🔐 Get complaints assigned to logged-in officer
-     */
+   
     @GetMapping("/complaints")
     @PreAuthorize("hasRole('OFFICER')")
     public ResponseEntity<List<Complaint>> getMyComplaints(Authentication authentication) {
@@ -30,9 +35,7 @@ public class OfficerComplaintController {
         return ResponseEntity.ok(complaints);
     }
 
-    /**
-     * 🔐 Update complaint if it belongs to the logged-in officer
-     */
+
 
     @PutMapping("/complaints/update/{id}")
     @PreAuthorize("hasRole('OFFICER')")

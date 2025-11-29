@@ -1,4 +1,4 @@
-import { jwtDecode } from "jwt-decode"; // ✅ correct named import
+import { jwtDecode } from "jwt-decode"; 
 
 
 export const saveToken = (token) => {
@@ -12,7 +12,7 @@ export const getRoleFromToken = () => {
   if (!token) return null;
   try {
     const decoded = jwtDecode(token);
-    return decoded?.roles?.[0]; // Example: ROLE_USER
+    return decoded?.roles?.[0];
   } catch (e) {
     return null;
   }

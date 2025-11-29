@@ -1,6 +1,6 @@
 import { useState } from "react";
 import api from "../utils/axiosConfig";
-import "./styles/OfficerComplaintCard.css"; // ✅ Import CSS
+import "./styles/OfficerComplaintCard.css"; 
 
 export default function OfficerComplaintCard({ complaint, refresh }) {
   const [status, setStatus] = useState(complaint.status);

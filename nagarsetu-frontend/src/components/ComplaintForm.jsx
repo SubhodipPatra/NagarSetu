@@ -1,6 +1,6 @@
 import { useState } from "react";
 import api from "../utils/axiosConfig";
-import "./styles/ComplaintForm.css"; // ✅ CSS import
+import "./styles/ComplaintForm.css"; 
 
 export default function ComplaintForm() {
   const [form, setForm] = useState({
@@ -30,8 +30,8 @@ export default function ComplaintForm() {
   placeholder="Description"
   onChange={handleChange}
   required
-  rows={5} // Number of visible lines
-  style={{ width: "100%" }} // Optional: to match input width
+  rows={5} 
+  style={{ width: "100%" }} 
 />
 
       <input

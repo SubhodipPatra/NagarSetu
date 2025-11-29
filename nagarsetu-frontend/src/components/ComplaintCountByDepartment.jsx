@@ -1,6 +1,6 @@
 import { useState } from "react";
 import api from "../utils/axiosConfig";
-import "./styles/ComplaintCountByDepartment.css"; // ✅ CSS import
+import "./styles/ComplaintCountByDepartment.css"; 
 
 export default function ComplaintCountByDepartment() {
   const [dept, setDept] = useState("");

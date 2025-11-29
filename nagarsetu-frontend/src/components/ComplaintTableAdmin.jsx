@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../utils/axiosConfig";
-import "./styles/ComplaintTableAdmin.css"; // ✅ Import CSS
+import "./styles/ComplaintTableAdmin.css"; 
 
 export default function ComplaintTableAdmin() {
   const [complaints, setComplaints] = useState([]);
@@ -23,10 +23,10 @@ export default function ComplaintTableAdmin() {
 
     try {
       await api.delete(`/complaints/${id}`);
-      alert("✅ Complaint deleted");
+      alert(" Complaint deleted");
       fetchComplaints();
     } catch (err) {
-      alert("❌ Failed to delete complaint");
+      alert(" Failed to delete complaint");
     }
   };
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../utils/axiosConfig";
-import "./styles/UserComplaintList.css"; // ✅ import the stylesheet
+import "./styles/UserComplaintList.css"; 
 
 export default function UserComplaintList() {
   const [complaints, setComplaints] = useState([]);

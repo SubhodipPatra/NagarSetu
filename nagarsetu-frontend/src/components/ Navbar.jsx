@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { getRoleFromToken, logout } from "../utils/auth";
-import logo from "../assets/logo.jpg"; // ✅ Add your logo here
-import "./styles/Navbar.css"; // Optional
+import logo from "../assets/logo.jpg"; 
+import "./styles/Navbar.css"; 
 
 export default function Navbar() {
   const role = getRoleFromToken();
