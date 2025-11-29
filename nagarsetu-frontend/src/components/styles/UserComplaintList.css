@@ -1,0 +1,39 @@
+.user-complaint-list {
+  margin-top: 20px;
+}
+
+.complaint-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid #2563eb;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.complaint-item b {
+  font-size: 16px;
+  color: #1e3a8a;
+}
+
+.complaint-item p {
+  margin: 6px 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+.complaint-status {
+  font-style: italic;
+  font-weight: bold;
+  color: #4b5563;
+}
+
+.complaint-remarks {
+  background-color: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #111827;
+}

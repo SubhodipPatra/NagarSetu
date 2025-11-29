@@ -1,0 +1,48 @@
+.complaint-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.complaint-table th,
+.complaint-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.complaint-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  color: #111827;
+}
+
+.complaint-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.complaint-table td:last-child {
+  text-align: center;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}

@@ -1,0 +1,16 @@
+
+# Node
+node_modules/
+dist/
+build/
+
+# Java Spring Boot
+target/
+
+# IDE
+.idea/
+.vscode/
+
+# MacOS
+.DS_Store
+
